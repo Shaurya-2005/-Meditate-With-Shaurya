@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meditate with Shaurya</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('yoga')">Yoga</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('meditation')">Meditation</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('consult-expert')">Consult Expert</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section">
+            <h2>Welcome to Meditate with Shaurya</h2>
+            <p><strong>Welcome to Meditate with Shaurya
+
+                My name is Shaurya, and I am a passionate student currently enrolled at LPU, where I am dedicated to not just my academic pursuits but also my deep-seated interest in yoga and mindfulness practices. My journey into the world of yoga began as a quest for physical fitness; however, it quickly transformed into a profound exploration of my spiritual and emotional well-being. This journey has significantly enriched my life and opened my eyes to the countless benefits that come with integrating mindfulness and yoga into everyday living.
+                
+                From an early age, I have been intrigued by the concepts of self-improvement and personal growth. I firmly believe that education is not confined to the walls of a classroom. It encompasses a holistic approach to life, where intellectual growth is complemented by emotional and spiritual development. My passion for yoga ignited a curiosity that led me to explore various aspects of this ancient practice, including its history, philosophy, and its practical application in our modern lives.
+                
+                Yoga, for me, is much more than just a series of physical postures. It is a comprehensive lifestyle that promotes harmony between the mind, body, and spirit. I have experienced firsthand how yoga can cultivate inner peace and resilience, especially during challenging times. Through regular practice, I have learned to become more present, aware, and connected to my surroundings and myself. This connection fosters a sense of calmness that permeates all areas of my life, allowing me to face challenges with a balanced perspective.
+                
+                In addition to my personal practice, I am eager to share the transformative power of yoga and mindfulness with others. I believe that everyone can benefit from the principles of mindfulness, whether they are seeking stress relief, improved focus, or a deeper understanding of themselves. This website is my platform to connect with others who share my passion for these practices, to provide resources, guidance, and support for anyone looking to embark on their own journey.
+                
+                The art of meditation, which is closely intertwined with yoga, has also played a significant role in my life. Through meditation, I have developed the ability to quiet my mind, center my thoughts, and tap into a deeper sense of self-awareness. This practice not only enhances mental clarity but also fosters emotional well-being. As I continue my exploration of meditation, I look forward to sharing insights, techniques, and tips that can help others incorporate meditation into their daily lives.
+                
+                As I navigate through my academic journey, I remain committed to fostering a balanced lifestyle that prioritizes mental, emotional, and physical health. By embracing the principles of yoga and mindfulness, I have discovered a path that allows me to grow, learn, and thrive in every aspect of my life. It is my hope that through this website, I can inspire others to embark on their own journeys toward self-discovery, well-being, and personal growth.
+                
+                Join me as we delve into the enriching world of yoga and meditation, explore various techniques, and cultivate a community that supports and uplifts one another on this transformative journey.
+                
+                </strong></p>
+        </section>
+
+        <section id="yoga" class="content-section hidden" style="display: none;">
+            <h2>Yoga</h2>
+            <p>Yoga is an ancient practice that unites the mind, body, and spirit, promoting overall well-being. Originating in India thousands of years ago, yoga encompasses a variety of physical postures, breathing exercises, and meditation techniques designed to enhance flexibility, strength, and mental clarity.</p>
+            
+            <div class="yoga-images">
+                <img src="C:\Users\HP\Downloads\yoga3.jpg" alt="Yoga Image 1" class="yoga-image">
+                <img src="C:\Users\HP\Downloads\yoga2.jpg" alt="Yoga Image 2" class="yoga-image">
+            </div>
+        </section>
+
+        <section id="meditation" class="content-section hidden" style="display: none;">
+            <h2>Meditation</h2>
+            <p>Meditation is a practice that has been embraced for thousands of years, originating from various spiritual traditions around the world. At its core, meditation involves focusing the mind and eliminating distractions to achieve a state of mental clarity, emotional calmness, and physical relaxation. There are many forms of meditation, including mindfulness, transcendental meditation, guided visualization, and loving-kindness meditation, each offering unique benefits.
+
+                One of the primary benefits of meditation is stress reduction. Numerous studies have shown that regular meditation can lower cortisol levels, the hormone associated with stress, leading to improved overall well-being. Practicing meditation can also enhance self-awareness, allowing individuals to develop a deeper understanding of their thoughts, emotions, and behaviors. This heightened self-awareness can lead to greater emotional resilience and improved decision-making.
+                
+                Meditation has also been linked to improved focus and concentration. By training the mind to remain present and attentive, practitioners often find that they can perform tasks with greater efficiency and creativity. Additionally, many people report experiencing enhanced emotional health, including reductions in symptoms of anxiety and depression. The practice encourages a positive outlook and fosters feelings of compassion and empathy toward oneself and others.
+                
+                Furthermore, meditation can promote physical health by encouraging relaxation and reducing the risk of stress-related ailments. It can improve sleep quality, enhance immune function, and lower blood pressure. Many athletes and performers incorporate meditation into their routines to enhance their performance and mental clarity.
+                
+                Incorporating meditation into daily life can be simple and rewarding. Just a few minutes each day can lead to significant benefits, making it an accessible practice for anyone seeking to enhance their mental, emotional, and physical well-being. Overall, meditation is a powerful tool that can help individuals navigate the complexities of modern life with greater ease and grace.</p>
+        </section>
+
+        <section id="consult-expert" class="content-section hidden" style="display: none;">
+            <h2>Consult Expert</h2>
+            <form id="consult-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="description">Describe Your Problem:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="contact">Contact Details:</label>
+                <input type="text" id="contact" name="contact" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mindfulness Hub. All rights reserved.</p>
+        <p>Email: shaurya123rai@gmail.com | Phone: 8429254119</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
